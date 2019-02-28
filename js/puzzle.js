@@ -43,3 +43,25 @@ function SavePuzzle() {
     invisibleBox.value = fenTextBox.value;
     UIChangeFEN()
 }
+
+function Commit() {
+    var data = {}
+    var fenTextBox = document.getElementById("FenTextBox");
+    var url = "https://api.minhyukpark.com/chess";
+    data["FEN"] = fenTextBox.value;
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "POST", url, false );
+    xmlHttp.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+    xmlHttp.send(JSON.stringify(data));
+}
+
+function Pull() {
+    var xmlHttp = new XMLHttpRequest();
+    var fenTextBox = document.getElementById("FenTextBox");
+    var url = "https://api.minhyukpark.com/chess";
+    xmlHttp.open( "GET", url, false );
+    xmlHttp.send( null );
+    var remoteText = JSON.parse(xmlHttp.responseText)["FEN"];
+    fenTextBox.value = remoteText;
+    SavePuzzle();
+}
