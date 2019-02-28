@@ -37,6 +37,7 @@ function ReloadPuzzle() {
 }
 
 function SavePuzzle() {
+    console.log("change puzzle");
     var fenTextBox = document.getElementById("FenTextBox");
     var invisibleBox = document.getElementById("hidden-current-puzzle");
     invisibleBox.value = fenTextBox.value;
