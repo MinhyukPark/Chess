@@ -1,0 +1,71 @@
+<div id="MainChess">
+    <div class="content">
+        <div id="board-parent">
+	    <div id="board-meta">
+		<div id="board-top">
+		    <div id="board-left">
+		    8 
+		    <br>
+		    7 
+		    <br>
+		    6
+		    <br>
+		    5
+		    <br>
+		    4
+		    <br>
+		    3
+		    <br>
+		    2
+		    <br>
+		    1
+		    </div>
+                    <div id="board"> </div>
+		</div>
+		<div id="board-bottom">
+		    <div id="board-bottom-left">
+	                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		    </div>
+                    <div id="board-bottom-text">abcdefgh</div>
+		</div>
+	    </div>
+	</div>
+
+	<div id="stats">
+        	<div id="stats-options">
+        	    <h1>
+        	    <a href="javascript:UINewGame()">New game</a>
+		     | 
+        	    <a href="javascript:UIUndoMove()">Undo</a>
+		     | 
+        	    <a href="javascript:GetPuzzle()">GetRandomPuzzle</a>
+		     | 
+        	    <a href="javascript:ReloadPuzzle()">Reload</a>
+		     | 
+        	    Time per move: <input id="TimePerMove" value="3000" onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';" onchange="javascript:UIChangeTimePerMove()" />ms
+        	    </h1>
+        	</div>
+        	<div id="stats-output">
+		    <div id="stats-output-top">
+        	        <h1>
+        	            <span id='output'></span>
+			</h1>
+		    </div>
+		    <div id="stats-output-bottom">
+			<div id="fen-top">
+		            <h1>
+        	                <textarea cols='50' rows='6' id='PgnTextBox'></textarea>
+			    </h1>
+			</div>
+		        <div id="fen-bottom">
+		            <h1>
+				    FEN: <input id='FenTextBox' onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px';" onchange="javascript:SavePuzzle()"/>
+		            </h1>
+			</div>
+		    </div>
+        	</div>
+        </div>
+    </div>
+</div>
+<div id="hidden-current-puzzle">
+</div>

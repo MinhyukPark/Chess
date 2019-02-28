@@ -1,0 +1,452 @@
+/* where old reset used to be */
+
+@font-face {
+    font-family: champagne;
+    src: url("../fonts/champagne_limousines/Champagne & Limousines.ttf");
+}
+
+
+@font-face {
+    font-family: champagne_bold;
+    src: url("../fonts/champagne_limousines/Champagne & Limousines Bold.ttf");
+}
+
+.center {
+    margin: auto;
+}
+
+.content {
+    height: 100%;
+    margin: auto auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header_content>* {
+    float: left;
+}
+
+#header_content {
+    height: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* stackoverflow linked to http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+/* tell the container's children to float left: */
+
+.float-my-children>* {
+    float: left;
+    margin-top: 20%;
+    margin-right: 0px;
+}
+
+.clearfix {
+    *zoom: 1/* for IE */
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.float_custom>* {
+    float: left;
+}
+
+/* wait I thought we weren't supposed to be using classes but everyone uses it anyway why tho */
+
+/*
+.project_description {
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-weight: normal;
+  font-size: 30px;
+  margin: 0 0;
+}
+*/
+
+.author_name_white {
+    font-family: "Wellfleet";
+    margin: 70px 0 0 75px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.author_name_gray {
+    font-family: "Wellfleet";
+    margin: 70px 0 0 75px;
+    color: #94a4a4;
+    font-size: 20px;
+}
+
+/* my mind's telling me noooo but my */
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#hi_message {}
+
+/* h1 - h3 */
+
+h1 {
+    font-family: "Roboto Mono";
+    font-weight: normal;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 a {
+    color: #fff;
+    font-family: "Roboto Mono";
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+h1 a:hover {
+    opacity: 1;
+}
+
+h2 {
+    font-family: "Arvo";
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    color: #313128;
+    margin: auto;
+    padding: 0;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+h3 {
+    /* font-family: "champagne_bold"; */
+    font-family: "Arvo";
+    font-weight: normal;
+    font-size: 26px;
+    letter-spacing: 3px;
+    text-align: left;
+    /*margin: 5px 0;*/
+    padding: 0 0;
+    position: relative;
+}
+
+
+p {}
+
+
+/* id nav */
+
+#nav {
+    height: 100%;
+    width: 67%;
+    float: left;
+    margin-right: 0px;
+}
+
+#nav ul {
+    list-style: none;
+    float: right;
+}
+
+#nav li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 5%;
+    float: right;
+}
+
+#nav li a {
+    color: #fff;
+    opacity: 0.6;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'champagne_bold';
+    position: relative;
+}
+
+#nav li a:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+
+#mobile_nav {
+    width: 65vw;
+    float: right;
+    margin-right: 0px;
+}
+
+#mobile_nav ul {
+    list-style: none;
+    float: right;
+}
+
+#mobile_nav li {
+    margin-top: 20px;
+    list-style: none;
+    margin-right: 5%;
+    float: right;
+}
+
+#mobile_nav li a {
+    color: #fff;
+    opacity: 0.6;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Wellfleet';
+    position: relative;
+}
+
+#mobile_nav li a:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+/* main MINHYUK PARK */
+
+#logo {
+    height: 100%;
+    width: 32%;
+}
+
+#logo a {
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    float: left;
+    margin-left: 10vw;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: #fff;
+    font-family: "champagne_bold";
+    letter-spacing: 3px;
+}
+
+
+#mobile_logo a {
+    color: #fff;
+    text-decoration: none;
+    float: left;
+    margin-left: 10%;
+    font-size: 30px;
+    margin-top: 10px;
+    color: #fff;
+    font-family: "champagne_bold";
+    letter-spacing: 3px;
+    -webkit-transform: translate3d(0,0,0);
+}
+
+#link_meta {
+    width: padding: 0 0;
+    position: relative;
+    margin-left: 5vw;
+    float: left;
+}
+
+
+/* projects or something like that */
+
+#MainChess {
+    background-color: #222;
+    color: #000000;
+    height: 100vh;
+    margin: auto auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+#board-parent {
+    margin: 10vh auto;
+    height: 60%;
+}
+
+#board {
+    width: 400px;
+}
+
+#board-meta {
+    display: flex;
+    flex-direction: column;
+}
+
+#board-top {
+    display: flex;
+    flex-direction: row;
+}
+
+#board-left {
+    color: #fff;
+    font-family: "Roboto Mono";
+    font-size: 10px;
+    line-height: 450%;
+}
+
+#board-bottom {
+    display: flex;
+    flex-direction: row;
+}
+
+#board-bottom-text {
+    color: #fff;
+    font-family: "Roboto Mono";
+    font-size: 10px;
+    letter-spacing: 39px;
+}
+
+#stats {
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+}
+
+#stats-options {
+}
+
+#stats-output {
+    display: flex;
+    flex-direction: column;
+}
+
+#stats-output-top {
+}
+
+#stats-output-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+select {
+    font-family: "Roboto Mono";
+}
+
+input {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    color: #fff;
+}
+
+textarea {
+    font-family: "Roboto Mono";
+    width: 505px;
+}
+
+#hidden-current-puzzle {
+    color: #fff;
+}
+
+
+#FenTextBox {
+    width: 416px;
+    font-family: "Roboto Mono"
+}
+
+#TimePerMove {
+    width: 32px;
+    font-family: "Roboto Mono"
+}
+.no-highlight {
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.sprite-bishop_black{ background-position: 0 0; width: 45px; height: 45px; }
+.sprite-bishop_white{ background-position: 0 -95px; width: 45px; height: 45px; }
+.sprite-king_black{ background-position: 0 -190px; width: 45px; height: 45px; }
+.sprite-king_white{ background-position: 0 -285px; width: 45px; height: 45px; }
+.sprite-knight_black{ background-position: 0 -380px; width: 45px; height: 45px; }
+.sprite-knight_white{ background-position: 0 -475px; width: 45px; height: 45px; }
+.sprite-pawn_black{ background-position: 0 -570px; width: 45px; height: 45px; }
+.sprite-pawn_white{ background-position: 0 -665px; width: 45px; height: 45px; }
+.sprite-queen_black{ background-position: 0 -760px; width: 45px; height: 45px; }
+.sprite-queen_white{ background-position: 0 -855px; width: 45px; height: 45px; }
+.sprite-rook_black{ background-position: 0 -950px; width: 45px; height: 45px; }
+.sprite-rook_white{ background-position: 0 -1045px; width: 45px; height: 45px; }
+
+/* end chess */
+
+
+/* Pure CSS SCroll Animation Arrow */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+}
+
+.chevron {
+    position: absolute;
+    width: 2.1rem;
+    height: 0.48rem;
+    opacity: 0;
+    transform: scale(0.3);
+    animation: move-chevron 3s ease-out infinite;
+}
+
+.chevron:first-child {
+    animation: move-chevron 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+    animation: move-chevron 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: #fff;
+}
+
+.chevron:before {
+    left: 0;
+    transform: skewY(30deg);
+}
+
+.chevron:after {
+    right: 0;
+    width: 50%;
+    transform: skewY(-30deg);
+}
+
+@keyframes move-chevron {
+    25% {
+        opacity: 1;
+    }
+    33.3% {
+        opacity: 1;
+        transform: translateY(2.28rem);
+    }
+    66.6% {
+        opacity: 1;
+        transform: translateY(3.12rem);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(4.8rem) scale(0.5);
+    }
+}
