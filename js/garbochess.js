@@ -180,7 +180,8 @@ function PVFromHash(move, ply) {
     
     UnmakeMove(move);
     
-    return pvString;
+    //return pvString;
+    return "";
 }
 
 //
@@ -2476,7 +2477,7 @@ function SeeAddSliderAttacks(target, us, attacks, pieceType) {
 
 function BuildPVMessage(bestMove, value, timeTaken, ply) {
     var totalNodes = g_nodeCount + g_qNodeCount;
-    return "Play:" + ply + " Score:" + value + " Nodes:" + totalNodes + " NPS:" + ((totalNodes / (timeTaken / 1000)) | 0) + " " + PVFromHash(bestMove, 15);
+    return "Play:" + ply + " Nodes:" + totalNodes + " NPS:" + ((totalNodes / (timeTaken / 1000)) | 0) + " " + PVFromHash(bestMove, 15);
 }
 
 //////////////////////////////////////////////////
