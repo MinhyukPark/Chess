@@ -20,7 +20,7 @@ function getRandomLine(filename){
 function GetPuzzle() {
     var fenTextBox = document.getElementById("FenTextBox");
     var invisibleBox = document.getElementById("hidden-current-puzzle");
-    fenTextBox.value = getRandomLine('./data/m8n2.txt');
+    fenTextBox.value = getRandomLine('./data/puzzle_db.txt');
     invisibleBox.value = fenTextBox.value;
     var textarea = document.getElementById("PgnTextBox");
     textarea.value = '';
