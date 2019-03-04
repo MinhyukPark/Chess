@@ -22,6 +22,7 @@ function GetPuzzle() {
     var invisibleBox = document.getElementById("hidden-current-puzzle");
     fenTextBox.value = getRandomLine('./data/puzzle_db.txt');
     invisibleBox.value = fenTextBox.value;
+    fenTextBox.style.width = ((fenTextBox.value.length + 1) * 8) + 'px';
     var textarea = document.getElementById("PgnTextBox");
     textarea.value = '';
     UIChangeFEN()
@@ -31,6 +32,7 @@ function ReloadPuzzle() {
     var fenTextBox = document.getElementById("FenTextBox");
     var invisibleBox = document.getElementById("hidden-current-puzzle");
     fenTextBox.value = invisibleBox.value;
+    fenTextBox.style.width = ((fenTextBox.value.length + 1) * 8) + 'px';
     var textarea = document.getElementById("PgnTextBox");
     textarea.value = '';
     UIChangeFEN()
@@ -39,6 +41,7 @@ function ReloadPuzzle() {
 function SavePuzzle() {
     console.log("change puzzle");
     var fenTextBox = document.getElementById("FenTextBox");
+    fenTextBox.style.width = ((fenTextBox.value.length + 1) * 8) + 'px';
     var invisibleBox = document.getElementById("hidden-current-puzzle");
     invisibleBox.value = fenTextBox.value;
     UIChangeFEN()
